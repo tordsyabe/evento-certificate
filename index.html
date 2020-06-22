@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Something to print</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- HTML BODY -->
+  </head>
+  <style type="text/css" media="print">
+    @page {
+      size: landscape;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="#" id="form">
+        <h1>Put some name to print</h1>
+        <input
+          class="name-text"
+          type="text"
+          id="fullname"
+          placeholder="Enter name to print"
+        />
+        <input class="btn-print" type="submit" value="Print" id="submit" />
+      </form>
+
+      <form action="#" id="attForm" class="att-form">
+        <!-- <input class="font" type="text" id="font" placeholder="set font"> -->
+        <label style="font-size: 12px" for="fontsize">Set font-size:</label>
+        <input
+          class="font-size"
+          type="text"
+          id="fontsize"
+          placeholder="font size"
+        />
+        <label style="font-size: 12px" for="margin">Set margin-top:</label>
+        <input
+          class="font-size"
+          type="text"
+          id="margin"
+          placeholder="font size"
+          value="50"
+        />
+        %
+        <input class="btn-save" type="submit" value="Save" id="submit" />
+      </form>
+      <div class="dynamicName">
+        <div id="print">
+          <span class="toPrint" id="valueName"></span>
+        </div>
+      </div>
+      <div>
+        <ul id="nameList"></ul>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+  </body>
+</html>
